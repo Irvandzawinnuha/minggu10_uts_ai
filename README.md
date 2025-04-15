@@ -1,4 +1,4 @@
-Minggu 10 Case Based – Reasoning kecerdasa buatan ai menggunakan python 
+Minggu 10 Case Based – Reasoning kecerdasan buatan ai menggunakan python tanpa menggunakan Library
 1. Deskripsi Tugas 
 Diberikan file restoran.xlsx berupa himpunan data 100 review restoran yang ada di kota Bandung 
 dengan dua atribut: Kualitas Servis (1-100; semakin tinggi semakin baik) dan Harga (bilangan real 25000
