@@ -1,32 +1,56 @@
-Minggu 10 Case Based – Reasoning kecerdasan buatan ai menggunakan python tanpa menggunakan Library
-1. Deskripsi Tugas 
-Diberikan file restoran.xlsx berupa himpunan data 100 review restoran yang ada di kota Bandung 
-dengan dua atribut: Kualitas Servis (1-100; semakin tinggi semakin baik) dan Harga (bilangan real 25000
-55000, semakin tinggi semakin mahal). Bangunlah sebuah sistem berbasis Fuzzy Logic untuk memilih 10 
-restoran terbaik di kota Bandung. Sistem membaca masukan file restoran.xlsx dan mengeluarkan output 
-berupa sebuah file peringkat.xlsx yang berisi 5 nomor/ID restoran terbaik beserta skor-nya (output 
-Defuzzification), dilengkapi dengan info kualitas servis dan harganya. 
-Tugas Anda ialah membuat sebuah sistem berbasis Fuzzy Logic Inference untuk memilih 5 restoran 
-terbaik. Program yang Anda bangun membaca masukan file supplier.xlsx dan menampilkan output berupa 
-5 supplier terbaik yang dilengkapi informasi berupa: Id pelanggan, info kualitas servis dan harganya, 
-serta skor kelayakan supplier untuk dipilih (hasil dari proses defuzzification).  
+# Sistem Cerdas Berbasis Fuzzy – Pemilihan Restoran Terbaik  
+**Minggu 10 – Kecerdasan Buatan (Case-Based Reasoning)**  
+**Bahasa: Python (Tanpa Library Fuzzy)**
 
-Poin-poin yang harus Anda desain dan analisis: 
-● Jumlah dan Nama Linguistik setiap atribut input 
-● Bentuk dan Batas Fungsi Keanggotaan Input 
-● Aturan Inferensi 
-● Metode Defuzzification 
-● Bentuk dan Batas Fungsi Keanggotaan Output (sesuai metode Defuzzification) 
+## 1. Deskripsi Tugas
 
-Catatan: Poin-poin di atas harus ada di dalam Laporan Tugas! 
-Proses yang harus Anda implementasikan ke dalam program (bisa berbentuk fungsi/prosedur): 
-● Membaca data dari file 
-● Fuzzification 
-● Inferensi 
-● Defuzzification 
-● Menyimpan output ke file 
-Catatan: Proses-proses di atas harus dibangun tanpa menggunakan Library!
+Diberikan file `restoran.xlsx` berisi **100 data review restoran** di kota Bandung, dengan dua atribut utama:
 
-2. Output Program 
-Output program Anda adalah tampilan daftar 5 restoran terbaik pilihan Sistem Fuzzy Anda yang berisi 
-informasi terkait berupa: Id restoran, kualitas servis, harga, dan skor kelayakannya.
+- **Kualitas Servis** (skala 1–100; semakin tinggi semakin baik)  
+- **Harga** (Rp25.000–Rp55.000; semakin tinggi semakin mahal)
+
+Tujuan tugas ini adalah membangun sistem **Fuzzy Logic Inference** untuk **memilih 5 restoran terbaik** berdasarkan kombinasi dari kualitas servis dan harga.
+
+Sistem membaca file input `restoran.xlsx`, melakukan proses fuzzy inference, dan menghasilkan file output `peringkat.xlsx` berisi:
+
+- ID/Nama restoran  
+- Kualitas Servis  
+- Harga  
+- Skor kelayakan (hasil *defuzzification*)
+
+---
+
+## 2. Poin Desain dan Analisis
+
+Berikut komponen yang perlu dianalisis dan diimplementasikan dalam laporan maupun kode program:
+
+- ✅ Jumlah dan Nama Linguistik Setiap Atribut Input  
+- ✅ Bentuk dan Batas Fungsi Keanggotaan Input  
+- ✅ Aturan Inferensi (IF–THEN)  
+- ✅ Metode Defuzzification  
+- ✅ Bentuk dan Batas Fungsi Keanggotaan Output
+
+---
+
+## 3. Proses dalam Program
+
+Program dibangun **tanpa menggunakan library fuzzy**. Proses-proses berikut diimplementasikan menggunakan fungsi atau prosedur:
+
+1. Membaca data dari `restoran.xlsx`  
+2. Fuzzifikasi nilai kualitas dan harga menjadi nilai linguistik  
+3. Inferensi menggunakan aturan fuzzy IF–THEN  
+4. Defuzzifikasi menggunakan metode *Centroid*  
+5. Menyimpan output ke file `peringkat.xlsx`
+
+---
+
+## 4. Output Program
+
+Output akhir dari program adalah:
+
+📄 File `peringkat.xlsx` berisi 5 restoran terbaik dengan informasi:
+
+- Nama Restoran  
+- Kualitas Servis  
+- Harga  
+- Skor Kelayakan (hasil defuzzifikasi)
