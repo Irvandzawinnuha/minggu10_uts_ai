@@ -70,7 +70,6 @@ rules = [
     ("tinggi", "murah", "tinggi"),
     ("tinggi", "sedang", "tinggi"),
     ("tinggi", "mahal", "sedang"),
-    # Aturan tambahan untuk variasi output
     ("rendah", "murah", "tinggi"),
     ("sedang", "mahal", "rendah"),
     ("tinggi", "mahal", "rendah")
