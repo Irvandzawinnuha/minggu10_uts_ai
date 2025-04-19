@@ -116,7 +116,7 @@ for _, row in df.iterrows():
     denominator = sum(aggregated)
     crisp_score = numerator / denominator if denominator != 0 else 0
     hasil_scores.append({
-        "Nama": nama, "Kualitas": kualitas_val, "Harga": harga_val, "Skor": crisp_score
+        "id Pelanggan": nama, "Pelayanan": kualitas_val, "harga": harga_val, "Skor": crisp_score
     })
 
 df_hasil = pd.DataFrame(hasil_scores)
