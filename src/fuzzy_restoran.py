@@ -15,10 +15,9 @@ try:
 except Exception as e:
     print("File Excel tidak ditemukan, menggunakan data dummy.")
     data_dummy = {
-        "Nama": ["Restoran A", "Restoran B", "Restoran C", "Restoran D", "Restoran E",
-                "Restoran F", "Restoran G", "Restoran H", "Restoran I", "Restoran J"],
-        "Kualitas": [8, 7, 6, 9, 5, 4, 7.5, 8.5, 3, 6.5],
-        "Harga": [5, 6.5, 8, 4, 7, 3.5, 5.5, 6, 2, 9]
+        "id Pelanggan": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        "Pelayanan": [8, 7, 6, 9, 5, 4, 7.5, 8.5, 3, 6.5],
+        "harga": [5, 6.5, 8, 4, 7, 3.5, 5.5, 6, 2, 9]
     }
     df = pd.DataFrame(data_dummy)
 
