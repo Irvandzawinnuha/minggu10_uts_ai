@@ -1,10 +1,8 @@
 import pandas as pd
 import math
 
-# Membaca data dari file Excel.
 try:
     df = pd.read_excel("restoran.xlsx")
-    # Bersihkan dan sesuaikan nama kolom
     df.columns = df.columns.str.strip().str.capitalize()
     df = df.rename(columns={
         "Id pelanggan": "Nama",
